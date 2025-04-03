@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Search Results: Gadgets
+
+  div.container-fluid
+    div.row
+      //- Prevents error when results is undefined or empty
+      if results && results.length  
+        each item in results
+          div.col-sm-4
+            div.card.border-primary.mb-3(style="max-width: 18rem;")
+              div.card-header #{item.name}
+              div.card-body
+                p Brand: #{item.brand}
+                p Price: $#{item.price}
+      else
+        p No gadgets found.
