@@ -1,7 +1,4 @@
-## Class Definition
-
-Class: Monuments  
-Attributes:
-- `name` (String): The name of the monument  
-- `location` (String): The geographical location  
-- `height` (Number): The height in meters  
+## Resource Class: Gadgets
+- **name** (string): The name of the gadget
+- **functionality** (string): Description of what it does
+- **price** (number): The cost in USD
